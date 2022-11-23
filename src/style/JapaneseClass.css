@@ -1,0 +1,79 @@
+.BGClassJp {
+  background: #1b1d34;
+  width: 100%;
+  height: auto;
+  padding-bottom: 15px;
+}
+
+.BGClassMateri {
+  background: #1b1d34;
+  width: 100%;
+  height: 100vh;
+}
+
+.BGStageJP {
+  background: rgb(255, 255, 255, 0.1);
+  padding: 0 15px;
+  padding-bottom: 5px;
+  border-radius: 10px;
+}
+
+h1 {
+  color: white;
+  margin: auto;
+}
+
+.ContainerMateri {
+  width: 100%;
+  height: 90%;
+}
+
+.RowMateri {
+  background: #fff;
+  width: 70%;
+  height: 90%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.ColMateri {
+  background: #eaeaea;
+  width: 96%;
+  height: 75%;
+  margin: 15px auto;
+  border-radius: 10px;
+}
+
+.ColButtonMateri .btnPrev {
+  outline: none;
+  border-radius: 8px;
+  width: 60px;
+  height: 30px;
+}
+
+.ColButtonMateri .btnNext {
+  outline: none;
+  border-radius: 8px;
+  width: 60px;
+  height: 30px;
+}
+
+
+.PaginationMateri ul {
+  display: flex;
+  margin-block-end: 0;
+  margin-block-start: 0;
+  padding-left: 0;
+}
+
+.PaginationMateri ul li {
+  list-style-type: none;
+}
+
+.PaginationMateri ul li button {
+  width: 10px;
+  margin: auto 2px;
+  height: 15px;
+  border-radius: 50%;
+}

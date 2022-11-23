@@ -1,0 +1,157 @@
+.bg {
+  background: #1b1d34;
+  width: 100%;
+  height: 100vh;
+}
+
+.bgTest {
+  width: 100%;
+  height: 100%;
+}
+
+.boxReg {
+  position: relative;
+  width: 420px;
+  height: 470px;
+  background: #080812;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.boxReg::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 420px;
+  height: 470px;
+  background: linear-gradient(0deg, transparent, #fff);
+  transform-origin: bottom right;
+  animation: animate 6s linear infinite;
+}
+
+.boxReg::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 420px;
+  height: 470px;
+  background: linear-gradient(0deg, transparent, #fff);
+  transform-origin: bottom right;
+  animation: animate 6s linear infinite;
+  animation-delay: -3s;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.formReg {
+  position: absolute;
+  inset: 4px;
+  border-radius: 8px;
+  background: #080812;
+  z-index: 10;
+  padding: 40px 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.formReg h2 {
+  color: #fff;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.inputBoxReg {
+  position: relative;
+  width: 330px;
+  margin-top: 25px;
+}
+
+.inputBoxReg input {
+  position: relative;
+  width: 100%;
+  padding: 20px 10px 10px;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #080812;
+  font-size: 16px;
+  letter-spacing: 1px;
+  z-index: 10;
+}
+
+.inputBoxReg span {
+  position: absolute;
+  left: 0;
+  padding: 20px 0 10px;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  letter-spacing: 1px;
+  transition: .5s;
+}
+
+.inputBoxReg input:valid~span,
+.inputBoxReg input:focus~span {
+  color: #fff;
+  transform: translateX(0px) translateY(-34px);
+  font-size: 12px;
+}
+
+.inputBoxReg i {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  border-radius: 4px;
+  transition: .5s;
+  pointer-events: none;
+  z-index: 9;
+}
+
+.inputBoxReg input:valid~i,
+.inputBoxReg input:focus~i {
+  height: 44px;
+}
+
+.link {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.link a {
+  color: #fff;
+  text-decoration: none;
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.link a:hover {
+  color: #fff;
+}
+
+input[type="submit"] {
+  border: none;
+  outline: none;
+  background: #fff;
+  padding: 11px 25px;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+input[type="submit"]:active {
+  opacity: .8;
+}

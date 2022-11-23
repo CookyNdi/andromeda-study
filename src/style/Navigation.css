@@ -1,0 +1,28 @@
+.class {
+  position: relative;
+}
+
+.class::before {
+  content: '';
+  background: #fff;
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 15%;
+  left: 5%;
+  border: 5px;
+  transition: .5s;
+}
+
+.class:hover::before {
+  width: 75%;
+}
+
+.transparent {
+  transition: .3s;
+}
+
+.NavDark {
+  background: rgb(8, 8, 18, 0.9);
+  transition: .3s;
+}
